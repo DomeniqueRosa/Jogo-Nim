@@ -5,6 +5,10 @@ def computador_escolhe_jogada(jogo,m):
     #arrumar a quantidade de peças que o computador pode tirar
     retorna =True
     cont = m
+
+        #como conseguir tirar o numero maximo de pecas deixando um valor m + 1 ?????
+        #antes de retirar ja faco o teste com o maximo de pecas que pode ser retirar, entao vejo se o resultado  obtido  é um resultado que faca com que a 
+        #estrategia venha ajudar a ganhar :(nao sei se essa descricao ficou clara??)
     if((jogo - cont) % (m + 1)  == 0):
         pecas_retiradas = cont
         return pecas_retiradas
@@ -42,11 +46,11 @@ def usuario_escolhe_jogada(n,m):
 
         pecas_retiradas = int(input("Quantas peças você vai retirar? "))
         
-        if(pecas_retiradas <= m and pecas_retiradas >0):
+        if(pecas_retiradas > 0 and pecas_retiradas <= m and pecas_retiradas <=n):
             #pecas_restantes = n - pecas_retiradas
             return pecas_retiradas     
         else:
-            print("valor invalido")
+            print("Oops! Jogada inválida! Tente de novo.")
             retorna = True
 def partida():
     retorna = True
@@ -55,7 +59,7 @@ def partida():
         m =int(input("Limite de peças por jogada? "))
 
         if(n<m or n < 0 or m < 0):
-            print("jogada invalida")
+            print("Oops! Jogada inválida! Tente de novo.")
             retorna = True
         else:
             retorna = False
@@ -103,17 +107,17 @@ escolha = int(input())
 continuar = True
 while(continuar):
     if(escolha == 1):
-        input("Você escolheu partida isolada.")
+        print("Você escolheu partida isolada.")
 
         #os.system('clear') funcao para limpar tela
         partida()
         break
     if(escolha == 2):
-        input("Você escolheu campeonato.")
+        print("Você escolheu campeonato.")
         campeonato()
-        break;
+        break
     else:
-        #os.system('clear')
+        os.system('clear')
         print("Valor Invalido!")
         print("1 - para jogar uma partida isolada.")
         print("2 - para jogar um campeonato.")
