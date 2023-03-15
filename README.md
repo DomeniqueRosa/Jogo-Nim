@@ -1,7 +1,7 @@
 # Atividade curso Coursera
-## Jogo Nim tem origem na antiga China, não é um jogo de sorte mas sim de estrategia. No qual no a função computador_escolhe usa essa estrategia para escolher qual a melhor jogada conforme a configuração do jogo
+### Jogo Nim tem origem na antiga China, não é um jogo de sorte mas sim de estrategia. No qual a função computador_escolhe usa essa estrategia para escolher qual a melhor jogada conforme a configuração do jogo.
 
-### Jogo composto em 4 funcoes
+### O Programa foi dividido em 4 funcoes.
 
 ##### partida()
 * esta funcao recebe os valores inicias de n e m
