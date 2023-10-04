@@ -1,4 +1,4 @@
-# Atividade curso Coursera
+# Atividade para conclusão curso em Python da plataforma de ensino Coursera
 ### O Jogo Nim é uma antiga criação da China que desafia a sorte e a estratégia dos jogadores. Diferentemente de jogos puramente baseados na sorte, o Jogo Nim é uma batalha de mentes, onde a habilidade estratégica é a chave para a vitória. No decorrer do jogo, a função 'computador_escolhe' utiliza uma estratégia elaborada e inteligente para determinar a melhor jogada possível, considerando cuidadosamente a configuração atual do jogo. Em cada rodada, a tomada de decisão calculada é fundamental para alcançar a vitória neste desafio milenar..
 
 ### O Programa foi dividido em 4 funcoes.
